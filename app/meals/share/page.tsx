@@ -22,7 +22,7 @@ export default function ShareMealPage() {
             </p>
           </div>
           <p>
-            <label htmlFor="title">Title</label>
+            <label htmlFor="title">Titles</label>
             <input type="text" id="title" name="title" required />
           </p>
           <p>
