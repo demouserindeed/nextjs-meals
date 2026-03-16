@@ -2,20 +2,10 @@ import { getMeal } from "@/lib/meals";
 import classes from "./page.module.css";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import { Meal } from "./types";
 
 interface MealDetailsPageProps {
   params: Promise<{ mealSlug: string }>;
-}
-
-interface Meal {
-  id: string;
-  slug: string;
-  title: string;
-  image: string;
-  summary: string;
-  instructions: string;
-  creator: string;
-  creator_email: string;
 }
 
 export default async function MealDetailsPage({ params }: MealDetailsPageProps) {
